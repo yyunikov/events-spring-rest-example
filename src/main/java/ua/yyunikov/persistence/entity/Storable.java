@@ -5,6 +5,8 @@ import org.springframework.data.domain.Persistable;
 
 interface Storable extends Persistable {
 
+    String getId();
+
     @JsonIgnore
     Long getTs();
 

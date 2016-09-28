@@ -29,7 +29,12 @@ public class DatabaseLoader implements CommandLineRunner {
         final HashMap<String, Object> sessionStartParams = new HashMap<>();
         sessionStartParams.put("sessionId", UUID.randomUUID().toString());
 
-        this.eventRepository.save(new Event(EventType.LINK_CLICKED, linkClickedParams));
-        this.eventRepository.save(new Event(EventType.SESSION_START, sessionStartParams));
+        if (eventRepository.countByType(EventType.SESSION_START) == 0) {
+            this.eventRepository.save(new Event(EventType.SESSION_START, sessionStartParams));
+        }
+
+        if (eventRepository.countByType(EventType.LINK_CLICKED) == 0) {
+            this.eventRepository.save(new Event(EventType.LINK_CLICKED, linkClickedParams));
+        }
     }
 }
