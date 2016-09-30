@@ -3,13 +3,12 @@ package ua.yyunikov.persistence.entity;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
-import org.springframework.data.domain.Persistable;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Map;
 
 @Document(collection = Event.COLLECTION_NAME)
-public class Event implements Persistable, Storable {
+public class Event implements Storable {
 
     public static final String COLLECTION_NAME = "events";
 
@@ -22,6 +21,9 @@ public class Event implements Persistable, Storable {
     private Long ts;
 
     private Map<String, Object> params;
+
+    public Event() {
+    }
 
     @PersistenceConstructor
     public Event(final EventType type, final Map<String, Object> params) {
@@ -91,6 +93,8 @@ public class Event implements Persistable, Storable {
     }
 
     public interface Meta {
-        String PARAM_TYPE = "type";
+        String TS = "ts";
+        String TYPE = "type";
+        String PARAMS = "params";
     }
 }

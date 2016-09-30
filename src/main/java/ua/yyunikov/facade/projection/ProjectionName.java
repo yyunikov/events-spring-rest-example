@@ -1,4 +1,4 @@
-package ua.yyunikov.projections;
+package ua.yyunikov.facade.projection;
 
 interface ProjectionName {
     String MINIMAL = "minimal";

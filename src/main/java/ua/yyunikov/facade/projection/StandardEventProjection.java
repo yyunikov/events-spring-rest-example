@@ -1,4 +1,4 @@
-package ua.yyunikov.projections;
+package ua.yyunikov.facade.projection;
 
 import org.springframework.data.rest.core.config.Projection;
 import ua.yyunikov.persistence.entity.Event;
