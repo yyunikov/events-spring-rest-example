@@ -1,8 +1,6 @@
 buildscript {
 	ext {
 		springBootVersion = '1.4.1.RELEASE'
-		springHalBrowserVersion = '2.5.4.RELEASE'
-		springHateoasVersion = '0.20.0.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -28,10 +26,10 @@ repositories {
 
 
 dependencies {
-	compile("org.springframework.boot:spring-boot-starter-data-mongodb:${springBootVersion}")
-	compile("org.springframework.boot:spring-boot-starter-data-rest:${springBootVersion}")
-	compile("org.springframework.data:spring-data-rest-hal-browser:${springHalBrowserVersion}")
-	compile("org.springframework.boot:spring-boot-starter-hateoas:${springHateoasVersion}")
-	compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
-	testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+	compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+	compile("org.springframework.boot:spring-boot-starter-data-rest")
+	compile("org.springframework.data:spring-data-rest-hal-browser")
+	compile("org.springframework.boot:spring-boot-starter-hateoas")
+	compile("org.springframework.boot:spring-boot-starter-web")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
 }
