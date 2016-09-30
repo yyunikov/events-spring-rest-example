@@ -1,4 +1,4 @@
-package ua.yyunikov.controller;
+package ua.yyunikov.integration.event;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageImpl;
@@ -9,9 +9,12 @@ import org.springframework.hateoas.PagedResources;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ua.yyunikov.facade.projection.StandardEventProjection;
-import ua.yyunikov.persistence.entity.Event;
-import ua.yyunikov.service.EventService;
+import ua.yyunikov.integration.ResourceParam;
+import ua.yyunikov.integration.ResourcePath;
+import ua.yyunikov.integration.event.projection.StandardEventProjection;
+import ua.yyunikov.domain.event.Event;
+import ua.yyunikov.domain.event.EventService;
+import ua.yyunikov.utils.MediaTypeAdditional;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;

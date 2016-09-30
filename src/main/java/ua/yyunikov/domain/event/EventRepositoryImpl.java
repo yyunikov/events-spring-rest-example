@@ -1,11 +1,10 @@
-package ua.yyunikov.persistence.repository;
+package ua.yyunikov.domain.event;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import ua.yyunikov.persistence.entity.Event;
 
 import java.util.List;
 

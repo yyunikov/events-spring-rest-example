@@ -1,4 +1,4 @@
-package ua.yyunikov.controller;
+package ua.yyunikov.integration;
 
 public interface ResourceParam {
     String FROM = "from";

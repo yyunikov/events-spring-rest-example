@@ -1,8 +1,9 @@
-package ua.yyunikov.facade.projection;
+package ua.yyunikov.integration.event.projection;
 
 import org.springframework.data.rest.core.config.Projection;
-import ua.yyunikov.persistence.entity.Event;
-import ua.yyunikov.persistence.entity.EventType;
+import ua.yyunikov.integration.ProjectionName;
+import ua.yyunikov.domain.event.Event;
+import ua.yyunikov.domain.event.EventType;
 
 import java.util.Map;
 

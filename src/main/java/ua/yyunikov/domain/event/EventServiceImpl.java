@@ -1,10 +1,8 @@
-package ua.yyunikov.service;
+package ua.yyunikov.domain.event;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
-import ua.yyunikov.persistence.entity.Event;
-import ua.yyunikov.persistence.repository.EventRepositoryCustom;
 
 import java.util.List;
 

@@ -1,9 +1,10 @@
-package ua.yyunikov.persistence.entity;
+package ua.yyunikov.domain.event;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.PersistenceConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
+import ua.yyunikov.domain.Storable;
 
 import java.util.Map;
 

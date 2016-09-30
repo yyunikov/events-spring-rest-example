@@ -1,9 +1,9 @@
-package ua.yyunikov.persistence.entity;
+package ua.yyunikov.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.domain.Persistable;
 
-interface Storable extends Persistable {
+public interface Storable extends Persistable {
 
     String getId();
 

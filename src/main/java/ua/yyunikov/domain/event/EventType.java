@@ -1,4 +1,4 @@
-package ua.yyunikov.persistence.entity;
+package ua.yyunikov.domain.event;
 
 public enum EventType {
     SESSION_START,

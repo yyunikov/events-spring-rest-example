@@ -1,7 +1,7 @@
-package ua.yyunikov.persistence.repository;
+package ua.yyunikov.domain.event;
 
 import org.springframework.data.domain.Pageable;
-import ua.yyunikov.persistence.entity.Event;
+import ua.yyunikov.domain.event.Event;
 
 import java.util.List;
 

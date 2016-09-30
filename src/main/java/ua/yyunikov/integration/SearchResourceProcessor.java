@@ -1,4 +1,4 @@
-package ua.yyunikov.controller.processor;
+package ua.yyunikov.integration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.rest.webmvc.RepositorySearchesResource;
@@ -7,9 +7,7 @@ import org.springframework.hateoas.Link;
 import org.springframework.hateoas.LinkBuilder;
 import org.springframework.hateoas.ResourceProcessor;
 import org.springframework.stereotype.Component;
-import ua.yyunikov.controller.ResourceParam;
-import ua.yyunikov.controller.ResourcePath;
-import ua.yyunikov.persistence.entity.Event;
+import ua.yyunikov.domain.event.Event;
 import ua.yyunikov.utils.ResourceUtils;
 
 @Component

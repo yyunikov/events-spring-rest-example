@@ -1,10 +1,9 @@
-package ua.yyunikov.facade.validation;
+package ua.yyunikov.domain.event;
 
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
-import ua.yyunikov.controller.ErrorCode;
-import ua.yyunikov.persistence.entity.Event;
+import ua.yyunikov.integration.ErrorCode;
 
 public class EventValidator implements Validator {
 

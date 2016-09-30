@@ -1,6 +1,4 @@
-package ua.yyunikov.service;
-
-import ua.yyunikov.persistence.entity.Event;
+package ua.yyunikov.domain.event;
 
 import java.util.List;
 

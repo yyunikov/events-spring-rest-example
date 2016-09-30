@@ -1,6 +1,6 @@
-package ua.yyunikov.facade.projection;
+package ua.yyunikov.integration;
 
-interface ProjectionName {
+public interface ProjectionName {
     String MINIMAL = "minimal";
     String STANDARD = "standard";
 }

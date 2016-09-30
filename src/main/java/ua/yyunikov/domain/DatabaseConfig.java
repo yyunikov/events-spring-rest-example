@@ -1,4 +1,4 @@
-package ua.yyunikov.persistence;
+package ua.yyunikov.domain;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.EnableMongoAuditing;

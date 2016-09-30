@@ -1,11 +1,11 @@
-package ua.yyunikov.persistence;
+package ua.yyunikov.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import ua.yyunikov.persistence.entity.Event;
-import ua.yyunikov.persistence.entity.EventType;
-import ua.yyunikov.persistence.repository.EventRepository;
+import ua.yyunikov.domain.event.Event;
+import ua.yyunikov.domain.event.EventType;
+import ua.yyunikov.domain.event.EventRepository;
 
 import java.util.HashMap;
 import java.util.UUID;

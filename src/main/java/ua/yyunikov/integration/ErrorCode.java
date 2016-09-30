@@ -1,4 +1,4 @@
-package ua.yyunikov.controller;
+package ua.yyunikov.integration;
 
 public enum ErrorCode {
     FIELD_EMPTY("%s field should not be empty!");

@@ -6,10 +6,10 @@ import org.springframework.data.projection.SpelAwareProxyProjectionFactory;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.core.event.ValidatingRepositoryEventListener;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
-import ua.yyunikov.facade.validation.EventValidator;
-import ua.yyunikov.persistence.entity.Event;
-import ua.yyunikov.facade.projection.MinimalEventProjection;
-import ua.yyunikov.facade.projection.StandardEventProjection;
+import ua.yyunikov.domain.event.EventValidator;
+import ua.yyunikov.domain.event.Event;
+import ua.yyunikov.integration.event.projection.MinimalEventProjection;
+import ua.yyunikov.integration.event.projection.StandardEventProjection;
 
 @Configuration
 public class ApplicationConfig {
