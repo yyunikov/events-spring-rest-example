@@ -1,4 +1,4 @@
-# events-spring-rest-example
+# Events System
 Typical event collecting system as example of using Spring Data Rest, Spring Boot, Spring HATEOAS, Gradle and MongoDb
 
 How to run on Mac
