@@ -1,5 +1,5 @@
 # Events System
-Typical event collecting system as example of using Spring Data Rest, Spring Boot, Spring HATEOAS, Gradle and MongoDb
+Typical event collecting system as example of using Spring Data Rest, Spring Boot, Spring HATEOAS, Gradle, MongoDb and Docker
 
 How to run on Mac
 =================================================================
