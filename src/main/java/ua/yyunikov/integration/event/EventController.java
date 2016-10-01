@@ -5,6 +5,7 @@ import org.springframework.data.domain.PageImpl;
 import org.springframework.data.projection.ProjectionFactory;
 import org.springframework.data.web.PagedResourcesAssembler;
 import org.springframework.hateoas.ExposesResourceFor;
+import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.PagedResources;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +15,6 @@ import ua.yyunikov.integration.ResourcePath;
 import ua.yyunikov.integration.event.projection.StandardEventProjection;
 import ua.yyunikov.domain.event.Event;
 import ua.yyunikov.domain.event.EventService;
-import ua.yyunikov.utils.MediaTypeAdditional;
 
 import javax.validation.constraints.NotNull;
 import java.util.List;
@@ -38,7 +38,7 @@ public class EventController {
     }
 
     @ResponseBody
-    @RequestMapping(path = ResourcePath.Events.SEARCH_TS, method = RequestMethod.GET, produces = MediaTypeAdditional.HAL_JSON)
+    @RequestMapping(path = ResourcePath.Events.SEARCH_TS, method = RequestMethod.GET, produces = MediaTypes.HAL_JSON_VALUE)
     public ResponseEntity<PagedResources<Resource<StandardEventProjection>>> findByTs(@RequestParam(ResourceParam.FROM) @NotNull final Long from,
                                                                     @RequestParam(value = ResourceParam.TO, required = false) final Long to,
                                                                     @RequestParam(value = ResourceParam.PAGE, required = false, defaultValue = "0") final int page,
