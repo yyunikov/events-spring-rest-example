@@ -16,7 +16,7 @@ You can connect to MongoDb console using command:
 ---------------------------------
   `docker exec -it mongodb sh`
 
-Gradle build (withoout tests):
+Gradle build (without tests):
 ---------------------------------
   `./gradlew build buildDocker -x test`
 
