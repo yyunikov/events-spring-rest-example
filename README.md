@@ -10,7 +10,7 @@ Create Docker machine:
 
 Run Mongo:
 ---------------------------------
-  `docker run -P -d --name mongodb mongo`
+  `docker run -p 27017:27017 -d --name mongodb mongo`
 
 You can connect to MongoDb console using command:
 ---------------------------------
